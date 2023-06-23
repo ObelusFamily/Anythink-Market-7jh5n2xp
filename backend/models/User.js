@@ -76,8 +76,7 @@ UserSchema.methods.toAuthJSON = function() {
     token: this.generateJWT(),
     bio: this.bio,
     image: this.image,
-    role: this.role,
-    isVerified: this.isVerified
+    role: this.role
   };
 };
 
