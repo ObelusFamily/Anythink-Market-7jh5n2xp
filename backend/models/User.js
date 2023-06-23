@@ -6,6 +6,7 @@ var secret = require("../config").secret;
 
 var UserSchema = new mongoose.Schema(
   {
+    isVerified: Boolean,
     username: {
       type: String,
       lowercase: true,
@@ -75,7 +76,8 @@ UserSchema.methods.toAuthJSON = function() {
     token: this.generateJWT(),
     bio: this.bio,
     image: this.image,
-    role: this.role
+    role: this.role,
+    isVerified: this.isVerified
   };
 };
 
@@ -85,7 +87,8 @@ UserSchema.methods.toProfileJSONFor = function(user) {
     bio: this.bio,
     image:
       this.image || "https://static.productionready.io/images/smiley-cyrus.jpg",
-    following: user ? user.isFollowing(this._id) : false
+    following: user ? user.isFollowing(this._id) : false,
+    isVerified: this.isVerified
   };
 };
 
