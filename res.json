@@ -1,0 +1,22 @@
+{
+    "items": [
+        {
+            "slug": "some-item-6l2q3o",
+            "title": "Some Item",
+            "description": "It's a cool item for real",
+            "image": "https://source.unsplash.com/random/200x200?sig=1",
+            "createdAt": "2023-06-23T07:58:40.975Z",
+            "updatedAt": "2023-06-23T07:58:40.975Z",
+            "tagList": [],
+            "favorited": false,
+            "favoritesCount": 0,
+            "seller": {
+                "username": "akuya",
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false,
+                "isVerified": false
+            }
+        }
+    ],
+    "itemsCount": 1
+}
